@@ -13,6 +13,13 @@
 		3FD288F42B70C8FF001EEB1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD288F22B70C8FF001EEB1A /* LaunchScreen.storyboard */; };
 		3FD2890E2B720802001EEB1A /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD2890D2B720802001EEB1A /* PhotoListViewController.swift */; };
 		3FD289102B7219AE001EEB1A /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD2890F2B7219AE001EEB1A /* FileService.swift */; };
+		3FD289142B727704001EEB1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD289132B727704001EEB1A /* LoginViewController.swift */; };
+		3FD2894B2B74DBC1001EEB1A /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD2894A2B74DBC1001EEB1A /* KeychainSwift */; };
+		3FD289672B75278E001EEB1A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD289662B75278E001EEB1A /* SettingsViewController.swift */; };
+		3FD289692B760467001EEB1A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD289682B760467001EEB1A /* AppCoordinator.swift */; };
+		3FD2896B2B7604ED001EEB1A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD2896A2B7604ED001EEB1A /* MainTabBarController.swift */; };
+		3FD2896D2B768EBC001EEB1A /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD2896C2B768EBC001EEB1A /* PasswordViewController.swift */; };
+		3FD2896F2B76A47F001EEB1A /* ErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD2896E2B76A47F001EEB1A /* ErrorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		3FD288F52B70C8FF001EEB1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD2890D2B720802001EEB1A /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
 		3FD2890F2B7219AE001EEB1A /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		3FD289132B727704001EEB1A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FD289662B75278E001EEB1A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3FD289682B760467001EEB1A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3FD2896A2B7604ED001EEB1A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		3FD2896C2B768EBC001EEB1A /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		3FD2896E2B76A47F001EEB1A /* ErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD2894B2B74DBC1001EEB1A /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,13 +70,19 @@
 		3FD288E62B70C8FE001EEB1A /* FileManager */ = {
 			isa = PBXGroup;
 			children = (
+				3FD2896E2B76A47F001EEB1A /* ErrorProtocol.swift */,
 				3FD288E72B70C8FE001EEB1A /* AppDelegate.swift */,
 				3FD288E92B70C8FE001EEB1A /* SceneDelegate.swift */,
+				3FD289682B760467001EEB1A /* AppCoordinator.swift */,
+				3FD2896A2B7604ED001EEB1A /* MainTabBarController.swift */,
 				3FD288F02B70C8FF001EEB1A /* Assets.xcassets */,
 				3FD288F22B70C8FF001EEB1A /* LaunchScreen.storyboard */,
 				3FD288F52B70C8FF001EEB1A /* Info.plist */,
 				3FD2890D2B720802001EEB1A /* PhotoListViewController.swift */,
 				3FD2890F2B7219AE001EEB1A /* FileService.swift */,
+				3FD289132B727704001EEB1A /* LoginViewController.swift */,
+				3FD289662B75278E001EEB1A /* SettingsViewController.swift */,
+				3FD2896C2B768EBC001EEB1A /* PasswordViewController.swift */,
 			);
 			path = FileManager;
 			sourceTree = "<group>";
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = FileManager;
+			packageProductDependencies = (
+				3FD2894A2B74DBC1001EEB1A /* KeychainSwift */,
+			);
 			productName = FileManager;
 			productReference = 3FD288E42B70C8FE001EEB1A /* FileManager.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 3FD288DB2B70C8FE001EEB1A;
+			packageReferences = (
+				3FD289492B74DBC1001EEB1A /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 3FD288E52B70C8FE001EEB1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +165,14 @@
 			files = (
 				3FD288E82B70C8FE001EEB1A /* AppDelegate.swift in Sources */,
 				3FD289102B7219AE001EEB1A /* FileService.swift in Sources */,
+				3FD2896B2B7604ED001EEB1A /* MainTabBarController.swift in Sources */,
+				3FD2896D2B768EBC001EEB1A /* PasswordViewController.swift in Sources */,
+				3FD2896F2B76A47F001EEB1A /* ErrorProtocol.swift in Sources */,
 				3FD288EA2B70C8FE001EEB1A /* SceneDelegate.swift in Sources */,
 				3FD2890E2B720802001EEB1A /* PhotoListViewController.swift in Sources */,
+				3FD289142B727704001EEB1A /* LoginViewController.swift in Sources */,
+				3FD289672B75278E001EEB1A /* SettingsViewController.swift in Sources */,
+				3FD289692B760467001EEB1A /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +385,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FD289492B74DBC1001EEB1A /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 21.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FD2894A2B74DBC1001EEB1A /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FD289492B74DBC1001EEB1A /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FD288DC2B70C8FE001EEB1A /* Project object */;
 }
